@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイズ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+  <header>
+  </header>
+  <main class="main">
+    <section class="selectQuiz" id="selectQuiz">
+      <div class="selectQuizTop">
+        <h1>問題のジャンルを選んでください</h1>
+      </div>
+      <nav class="selectQuizButtons">
+        <button type="button" class="btn btn-outline-primary" id="quiz_1"></button>
+        <button type="button" class="btn btn-outline-primary" id="quiz_2"></button>
+        <button type="button" class="btn btn-outline-primary" id="quiz_3"></button>
+        <button type="button" class="btn btn-outline-primary" id="quiz_4"></button>
+      </nav>
+    </section>
+
+    <section class="quetionMain displayNone" id="quetionMain">
+      <div class="questionZone" id="questionZone">
+        <div class="quetion" id="quetion">
+
+        </div>
+      </div>
+      <div class="answersZone" id="answersZone">
+        <div class="answers">
+          <div class="row1">
+            <div class="form-check flex1">
+              <input class="form-check-input" type="radio" name="answerButtons" id="answer1" checked>
+              <label class="form-check-label_1" for="answer1" id="answer1Cont">
+
+              </label>
+            </div>
+            <div class="form-check flex1 intervalLeft">
+              <input class="form-check-input" type="radio" name="answerButtons" id="answer2">
+              <label class="form-check-label_2" for="answer2" id="answer2Cont">
+
+              </label>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="form-check flex1">
+              <input class="form-check-input" type="radio" name="answerButtons" id="answer3">
+              <label class="form-check-label_3" for="answer3" id="answer3Cont">
+
+              </label>
+            </div>
+            <div class="form-check flex1 intervalLeft">
+              <input class="form-check-input" type="radio" name="answerButtons" id="answer4">
+              <label class="form-check-label_4" for="answer4" id="answer4Cont">
+
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="answerConfirm">
+          <button type="button" class="btn btn-warning" id="answerButton">回答する<br>(ファイナルアンサー！)</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="checkingAnswers displayNone" id="checkingAnswers">
+      <div class="checkingAnswerZone">
+        <div class="JudgeZone" id="JudgeZone">
+
+        </div>
+        <div class="correct" id="correct">
+
+        </div>
+        <div class="correctExplanation" id="correctExplanation">
+
+        </div>
+      </div>
+      <div class="nextQuetion">
+        <button type="button" class="btn btn-success" id="nextbutton">次の問題へ</button>
+      </div>
+    </section>
+
+    <section class="endDisplay displayNone" id="endDisplay">
+      <div class="finalStats">
+        <p class="line_1">ここまでおつかれさまでした。</p>
+        <p class="line_2">クイズが全問終わりました。</p>
+        <p class="line_3">最終的な結果は</p>
+        <div class="stats" id="stats"></div>
+        <p class="line_4">正解でした。</p>
+      </div>
+      <div class="topReturn">
+        <button type="button" class="btn btn-secondary" id="retrunToTop">トップ画面に戻る</button>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <small>&copy;2023 Keita Nakao</small>
+  </footer>
+  <script src="./code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./quiz.js"></script>
+</body>
+</html>

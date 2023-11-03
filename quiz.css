@@ -1,0 +1,187 @@
+@charset "UTF-8";
+body{
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #0f3350;
+}
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.footer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* トップページ */
+.selectQuizTop {
+  margin: 50px 0;
+  text-align: center;
+  color: #0f3350;
+}
+.selectQuizButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin-bottom: 20px;
+  width: 200px;
+}
+.selectQuiz.displayNone {
+  display: none;
+}
+.selectQuiz {
+  margin-bottom: 50px;
+}
+.btn-outline-primary {
+  color: #0f3350;
+  background-color: #f5f5dc;
+  font-weight: bold;
+  border: 2px solid #0f3350;
+}
+
+/* メイン問題ページ */
+.questionZone {
+  margin-top: 50px;
+}
+.quetion {
+  font-size: 1.8rem;
+  text-align: center;
+  border: 5px solid #e3d7a3;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.answers {
+  font-size: 1.5rem;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px 50px 50px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 50px 50px 50px;
+}
+.flex1 {
+  flex: 1;
+}
+.intervalLeft {
+  margin-left: 20px;
+}
+.answerConfirm {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.quetionMain.displayNone {
+  display: none;
+}
+.btn-warning {
+  font-size: 1.5rem;
+  width: 300px;
+  font-weight: bold;
+  background-color: #f5f5dc;
+  border: 2px solid #0f3350;
+}
+.btn-warning:hover {
+  background-color: #e3d7a3;
+  border: 2px solid #0f3350;
+}
+.btn-warning:active {
+  background-color: #e3d7a3;
+  border: 2px solid #0f3350;
+}
+
+/* アンサーページ */
+.checkingAnswerZone {
+  margin-top: 50px;
+  border: 5px solid #e3d7a3;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.JudgeZone {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.correct {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ff0000;
+}
+.correctExplanation {
+  text-align: center;
+}
+.nextQuetion {
+  text-align: center;
+  margin: 100px 0;
+}
+.checkingAnswers.displayNone {
+  display: none;
+}
+.nextQuetion .btn {
+  background-color: #748E46;
+}
+.nextQuetion .btn:hover {
+  background-color: #4e6428;
+}
+
+/* 最終結果ページ */
+.finalStats {
+  margin-top: 50px;
+  border: 5px solid #e3d7a3;
+  border-radius: 1rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.stats {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #ff0000;
+}
+.topReturn {
+  margin: 100px 0;
+  text-align: center;
+}
+.endDisplay.displayNone {
+  display: none;
+}
+
+@media screen and (max-width:780px) {
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10vh;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .intervalLeft {
+    margin-left: 0;
+  }
+  .answers {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 0 10vw;
+  }
+  .form-check {
+    margin-bottom: 10vh;
+  }
+}
